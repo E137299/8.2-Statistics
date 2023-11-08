@@ -17,4 +17,12 @@ class Main {
       e.printStackTrace();
     }
   }
+
+    //   public static double average(int[] arr)
+
+
+    //   public static double standardDeviation(int[] arr)
+
+
+    //   public static int mode(int[] arr)
 }
