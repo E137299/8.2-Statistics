@@ -25,9 +25,10 @@ difference. Sum all the differences. </li>
 
 
 	c. ![second](assets/second.PNG)
+
 	d.  ![third](assets/third.PNG)</li>
 
-6. For a normal distribution, 68.3% of the data will lie within one standard deviation of the 
+7. For a normal distribution, 68.3% of the data will lie within one standard deviation of the 
 average, while 95.4% will lie within two standard deviations. 
 
 ### Assignment: 
