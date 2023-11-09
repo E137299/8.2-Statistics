@@ -2,33 +2,23 @@
 
 
 ### Background: 
-1. For this lab you will use numbers.txt which contains a large (N <= 1000) 
-number of integers. The integers range in value from 0 to 100. The text file has been created with one value on each line. Due to the potential for the sum of the numbers to be very large, you should use a long integer in your calculation to find the average.
-<br></br>
-3. The number of integers in the file is unknown.
-   <br></br>
-4. Your must write the following functions: average(), standardDeviation(), and mode().  The mode is defined as the value(s) present with the highest frequency. Calculating the standard deviation consists of the following steps:
-<br></br># Statistics
-
-
-### Background: 
 1. For this lab you will use numbers.txt which contains a large(N <= 1000) number of integers. The integers range in value from 0 to 100. The text file has been created with one value on each line. Due to the potential for the sum of the numbers to be very large, you should use a long integer in your calculation to find the average.
 
 2. The number of integers in the file is unknown.
 
 3. Your must write the following functions: average(), standardDeviation(), and mode().  
 
-	**mode**: defined as the value(s) present with the highest frequency. 
-	**average**: calculated by summing all the numbers in the arraylist and divding the total by the number of numbers.
-	**standard deviation**: consists of the following steps:
+**mode**: defined as the value(s) present with the highest frequency. 
+**average**: calculated by summing all the numbers in the arraylist and divding the total by the number of numbers.
+**standard deviation**: consists of the following steps:
 
-		a. Find the average of the list of numbers. 
+	a. Find the average of the list of numbers. 
 
-		b. Determine the difference of each number from the average, and square each difference. Sum all the differences. 
+	b. Determine the difference of each number from the average, and square each difference. Sum all the differences. 
 		
-		c. Divide this sum by (the number of values - 1). 
+	c. Divide this sum by (the number of values - 1). 
 		
-		d. Take the square root of the above division result from step c. 
+	d. Take the square root of the above division result from step c. 
 
    	Example, given this list of numbers: 7 4 5 9 10
    
