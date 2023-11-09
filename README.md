@@ -18,9 +18,9 @@ number of integers. The integers range in value from 0 to 100. The text file has
 
 3. Your must write the following functions: average(), standardDeviation(), and mode().  
 
-	- The **mode** is defined as the value(s) present with the highest frequency. 
-	- The **average** is calculated by summing all the numbers in the arraylist and divding the total by the number of numbers.
-	- Calculating the **standard deviation** consists of the following steps:
+	**mode**: defined as the value(s) present with the highest frequency. 
+	**average**: calculated by summing all the numbers in the arraylist and divding the total by the number of numbers.
+	**standard deviation**: consists of the following steps:
 
 		a. Find the average of the list of numbers. 
 
