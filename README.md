@@ -30,7 +30,7 @@ number of integers. The integers range in value from 0 to 100. The text file has
 		
 		d. Take the square root of the above division result from step c. 
 
-		Example, given this list of numbers: 7 4 5 9 10
+	**Example**, given this list of numbers: 7 4 5 9 10
    
 		a. The average = 7 
 
