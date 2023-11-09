@@ -8,8 +8,10 @@
 
 3. Your must write the following functions: average(), standardDeviation(), and mode().  
 
-**mode**: defined as the value(s) present with the highest frequency. 
+**mode**: defined as the value(s) present with the highest frequency.
+
 **average**: calculated by summing all the numbers in the arraylist and divding the total by the number of numbers.
+
 **standard deviation**: consists of the following steps:
 
 	a. Find the average of the list of numbers. 
@@ -20,7 +22,7 @@
 		
 	d. Take the square root of the above division result from step c. 
 
-   	Example, given this list of numbers: 7 4 5 9 10
+Example, given this list of numbers: 7 4 5 9 10
    
 	a. The average = 7 
 
