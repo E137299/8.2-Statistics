@@ -22,19 +22,18 @@
 
    	Example, given this list of numbers: 7 4 5 9 10
    
-		a. The average = 7 
+	a. The average = 7 
 
-		b. Sum of square of differences: 
+	b. Sum of square of differences: 
 
-   		![first](assets/first.png)
+   	![first](assets/first.png)
 
-		c. ![second](assets/second.PNG)
+	c. ![second](assets/second.PNG)
 
-		d.  ![third](assets/third.PNG)</li>
+	d.  ![third](assets/third.PNG)</li>
 
-	For a normal distribution, 68.3% of the data will lie within one standard deviation of the average, while 95.4% will lie within two standard deviations. 
-   <br></br>
-    <br></br>
+For a normal distribution, 68.3% of the data will lie within one standard deviation of the average, while 95.4% will lie within two standard deviations. 
+<br></br><br></br>
 ### Assignment: 
 1. Your program should print out the average, standard deviation, and mode of the data in numbers.txt.  
 
