@@ -14,13 +14,13 @@
 
 **standard deviation**: consists of the following steps:
 
-	a. Find the average of the list of numbers. 
+a. Find the average of the list of numbers. 
 
-	b. Determine the difference of each number from the average, and square each difference. Sum all the differences. 
+b. Determine the difference of each number from the average, and square each difference. Sum all the differences. 
 		
-	c. Divide this sum by (the number of values - 1). 
+c. Divide this sum by (the number of values - 1). 
 		
-	d. Take the square root of the above division result from step c. 
+d. Take the square root of the above division result from step c. 
 
 Example, given this list of numbers: 7 4 5 9 10
    
