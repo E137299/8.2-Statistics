@@ -13,7 +13,6 @@
 **average**: calculated by summing all the numbers in the arraylist and divding the total by the number of numbers.
 
 **standard deviation**: consists of the following steps:
-
 a. Find the average of the list of numbers. 
 
 b. Determine the difference of each number from the average, and square each difference. Sum all the differences. 
