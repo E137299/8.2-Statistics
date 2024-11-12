@@ -1,7 +1,7 @@
-import java.io.File;  // Import the File class
+import java.io.File; // Import the File class
+import java.io.FileNotFoundException;
 import java.util.ArrayList;
-import java.io.FileNotFoundException;  // Import this class to handle errors
-import java.util.Scanner; // Import the Scanner class to read text files
+import java.util.Scanner; // Import this class to handle errors
 
 class Main {
   public static void main(String[] args) {
@@ -16,13 +16,18 @@ class Main {
       System.out.println("An error occurred.");
       e.printStackTrace();
     }
+    for (Integer num : arr) {
+      System.out.println(num);
+    }
+    
   }
 
-    //   public static double average(int[] arr)
+  // public static double average(ArrayList<Integer>() arr)
 
 
-    //   public static double standardDeviation(int[] arr)
+  // public static double standardDeviation(ArrayList<Integer>() arr)
 
 
-    //   public static int mode(int[] arr)
+  // public static int mode(ArrayList<Integer> arr)
+
 }
