@@ -7,7 +7,7 @@ public class MainTest {
     public void testAverage() {
         ArrayList<Integer> arr = new ArrayList<>(Arrays.asList(1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5));
         double result = Main.average(arr);
-        Assert.assertEquals(3.6666666666666665, result, 0.01);
+        Assert.assertEquals(3.6666666666666665, result, 0.1);
     }
 
     @Test

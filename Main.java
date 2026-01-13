@@ -4,32 +4,104 @@ import java.util.ArrayList;
 import java.util.Scanner; // Import this class to handle errors
 
 
-class Main {
-  public static void main(String[] args) {
+class Main 
+{
+  public static void main(String[] args) 
+  {
     // create an ArrayList to store the integers from the file
+    ArrayList<Integer> numbers = new ArrayList<Integer>();
 
-    // read the integers from the file and store them in the ArrayList
-        // create a File object and a Scanner object to read the file
 
-        // use a while loop to read each integer from the file and add it to the ArrayList
+    // read the integers from the file and store them in the 
+    try
+    {
+      Scanner scan= new Scanner(new File("numbers.txt"));
+      while (scan.hasNextLine())
+      {
+        numbers.add(Integer.parseInt(scan.nextLine()));
+      }
+      scan.close();
+    }
+    catch (FileNotFoundException e) 
+    {
+      System.out.println("An error occurred.");
+      e.printStackTrace();
+      return; //Exit if missing file
+    }
+        double avg = average(numbers);
+        double stdDev = standardDeviation(numbers);
+        int md = mode(numbers);
 
-        // handle the FileNotFoundException if the file is not found
+        System.out.printf("Average: %.2f%n", avg);
+        System.out.printf("Standard Deviation: %.2f%n", stdDev);
+        System.out.println("Mode: " + md);
+    }
 
-    // call the average, standardDeviation, and mode methods and print their results
-  }
-  // implement the average method to calculate the average of the integers in the ArrayList
-  public static double average(ArrayList<Integer> arr) {
+    // Calculate the average using a long for the sum to avoid overflow
+public static double average(ArrayList<Integer> numbers) 
+{
+  if (numbers == null || numbers.isEmpty()) 
+  {
     return 0.0;
   }
-
-  // implement the standardDeviation method to calculate the standard deviation of the integers in the ArrayList
-  public static double standardDeviation(ArrayList<Integer> arr) {
-    return 0.0;
+  long sum = 0;
+  for (int number : numbers) 
+  {
+    sum += number;
+  }
+  return (double) sum / numbers.size();
   }
 
-  // implement the mode method to calculate the mode of the integers in the ArrayList
-  public static int mode(ArrayList<Integer> arr) {
-    return 0;
+  // Calculate the sample standard deviation (divide by n-1)
+  public static double standardDeviation(ArrayList<Integer> numbers) 
+  {
+    if (numbers == null || numbers.size() <= 1) 
+    {
+      return 0.0;
+    }
+    double mean = average(numbers);
+    double sumSquaredDiff = 0.0;
+    for (int number : numbers) 
+    {
+      double diff = number - mean;
+      sumSquaredDiff += diff * diff;
+    }
+    double variance = sumSquaredDiff / (numbers.size() - 1);
+    return Math.sqrt(variance);
   }
 
+    // Find the mode (most frequent value). If ties, return the smallest value.
+  public static int mode(ArrayList<Integer> numbers) 
+  {
+    if (numbers == null || numbers.isEmpty()) 
+    {
+      return 0;
+    }
+  // Frequency array: index 0–100 since values are in that range
+  int[] freq = new int[101];
+  for (int number : numbers) 
+  {
+    freq[number]++;
+  }
+
+  // Find the maximum frequency
+  int maxFreq = 0;
+  for (int i = 0; i <= 100; i++) 
+  {
+    if (freq[i] > maxFreq) 
+    {
+      maxFreq = freq[i];
+    }
+  }
+
+
+  for (int i = 0; i <= 100; i++) 
+  {
+    if (freq[i] == maxFreq) 
+    {
+      return i;
+    }
+  }
+  return 0; 
+  }
 }
